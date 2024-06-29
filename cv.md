@@ -1,6 +1,5 @@
 ### [rsschool-cv](https://github.com/Dmitriylies/rsschool-cv)
-
-
+---
 # Liesnykh Dmitriy
 ---
 ### Contacts
