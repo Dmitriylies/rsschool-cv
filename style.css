@@ -1,9 +1,75 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+/* --------------Basic*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
 }
+nav,footer,header,aside {display: block;}
+
 ul[class],
 ol[class] {
   padding: 0;
+}
+/* --------------fonts*/
+@font-face {
+    font-family: 'Anton';
+    src: url('/fonts/Anton-Regular.woff2') format('woff2'),
+        url('/fonts/Anton-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-color: #B5B5B5; 
+    color: #DDDDDD;
+    font-family: 'Anton';
+}
+.main {
+    display: block;
+    margin: auto;
+    max-width: 1024px;
+    background-color: #252525;
+    position: ;
+}
+
+.header__photo {
+    display: flex;
+    justify-content: center;
+    padding: 18px 15px 0 15px;
+        margin-bottom: 30px;
+}
+.header__img {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.profession {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+}
+.profession__text {
+
+}
+.profession__icon {
+    max-width: 30px;
+    max-height: 30px;
+}
+.name {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 80px;
+    letter-spacing: 3px;
+}
+.main {
+}
+.information {
+}
+.information__education {
+}
+.information__skills {
+}
+.information__experience {
 }
