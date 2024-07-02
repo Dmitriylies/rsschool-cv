@@ -4,11 +4,15 @@
 	margin: 0;
 	border: 0;
 }
+a {
+
+}
 nav,footer,header,aside {display: block;}
 
 ul[class],
 ol[class] {
   padding: 0;
+  list-style: none;
 }
 /* --------------fonts*/
 @font-face {
@@ -19,18 +23,25 @@ ol[class] {
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Blinker SemiLight';
+    src: url('/fonts/Blinker-SemiLight.woff2') format('woff2'),
+        url('/fonts/Blinker-SemiLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
 
 body {
     background-color: #B5B5B5; 
     color: #DDDDDD;
-    font-family: 'Anton';
+    font-family: 'Blinker SemiLight';
 }
 .main {
     display: block;
     margin: auto;
     max-width: 1024px;
     background-color: #252525;
-    position: ;
 }
 
 .header__photo {
@@ -47,7 +58,9 @@ body {
 .profession {
     text-transform: uppercase;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
+    padding: 0 50px 0 50px;
+    
 }
 .profession__text {
 
@@ -59,11 +72,14 @@ body {
 .name {
     display: flex;
     justify-content: center;
+    font-family: 'Anton';
     text-transform: uppercase;
     font-size: 80px;
     letter-spacing: 3px;
+
 }
 .main {
+    
 }
 .information {
 }
