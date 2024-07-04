@@ -7,7 +7,7 @@
     <title>Student CV</title>
 </head>
 <body>
-   <main class="main">
+    <div class="wrapper">
        <header>
            <div class="header__photo">
                <img class="header__img" src="/images/header_photo.jpeg" alt="my photo">
@@ -19,34 +19,165 @@
            </div>
            <h1 class="name">Dmitriy Liesnykh</h1>
        </header>
-       <section class="main">
-          <div class="information">
-            <div class="information__education">
-                <h3 class="information__title">Education</h3>
-                <div class="information__item">
-                    <a class="place" href="https://www.nmu.org.ua/ua/" target="_blank">National Technical University Dnipro Polytechnic</a>
-                    <p class="major">Programme Subject Area: Mining</p>
-                    <p class="period">
-                        2014-2019
-                    </p>
-                </div>
-            </div>
-            <div class="information__skills">
-                <h3 class="information__title">Skils</h3>
-                <ul class="information__list">
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                    <li>Figma</li>
-                    <li>Git</li>
+       <main section class="main">
+        <section class="container">
+            <p class="about">
+                I'm a trainee Front-end Developer from Ukraine.
+                Currently, I work at a bank while studying IT to change my profession in the near future and become a qualified specialist in this field.
+                My main goal is to be in demand in the modern world and independent from any country.
+            </p>
+            <article class="article__item">
+                <h3 class="content__title title">skills</h3>
+                <ul class="content__list">
+                    <li class="content__item">
+                        <div class="list-item__inner">
+                            <h4 class="list-item__name">HTML5</h4>
+                            <div class="list-item__indikator">
+                                <div class="indikator__item full"></div>
+                                <div class="indikator__item full"></div>
+                                <div class="indikator__item full"></div>
+                                <div class="indikator__item full"></div>
+                                <div class="indikator__item empty"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content__item">
+                        <div class="list-item__inner">
+                            <h4 class="list-item__name">CSS3</h4>
+                            <div class="list-item__indikator">
+                                <div class="indikator__item full"></div>
+                                <div class="indikator__item full"></div>
+                                <div class="indikator__item full"></div>
+                                <div class="indikator__item full"></div>
+                                <div class="indikator__item empty"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content__item">
+                        <div class="list-item__inner">
+                            <h4 class="list-item__name">git</h4>
+                            <div class="list-item__indikator">
+                                <div class="indikator__item full"></div>
+                                <div class="indikator__item full"></div>
+                                <div class="indikator__item full"></div>
+                                <div class="indikator__item"></div>
+                                <div class="indikator__item"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content__item">
+                        <div class="list-item__inner">
+                            <h4 class="list-item__name">Figma</h4>
+                            <div class="list-item__indikator">
+                                <div class="indikator__item full"></div>
+                                <div class="indikator__item full"></div>
+                                <div class="indikator__item"></div>
+                                <div class="indikator__item"></div>
+                                <div class="indikator__item"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content__item">
+                        <div class="list-item__inner">
+                            <h4 class="list-item__name">JavaScript</h4>
+                            <div class="list-item__indikator">
+                                <div class="indikator__item full"></div>
+                                <div class="indikator__item empty"></div>
+                                <div class="indikator__item empty"></div>
+                                <div class="indikator__item empty"></div>
+                                <div class="indikator__item empty"></div>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
+            </article>
+            <article class="article__item">
+                <h3 class="content__title title">code</h3>
+                <div class="content__code">
+                    <pre>
+                        <code class="code">
+<span class="code__color">function</span> isPalindrome(line) {
+ let a = line.toString().split("").reverse().join("");
+  if (line == a) {
+   return <span class="code__color">true</span>;
+  } else{
+   return <span class="code__color">false</span>;
+  }
+}
+                        </code>
+                    </pre>
             </div>
-          </div>
-          <div class="information">
-            <section class="information__experience"></section>
-            <section class="information__experience"></section>
-          </div>
-       </section>
-</main>
+            </article>
+        </section>
+        <section class="container">
+            <article class="article__item">
+                <h3 class="content__title title">Education</h3>
+                <div class="content__wrapper">
+                    <div class="content__info">
+                        <a class="place" href="https://www.nmu.org.ua/ua/" target="_blank">National Technical University "Dnipro Polytechnic"</a>
+                        <p class="major">Mining master's degree</p>
+                    </div>
+                    <div class="content__desc">
+                        <p>sep 2014-</p>
+                        <p>may 2019</p>
+                    </div>
+                </div>
+            </article>
+            <article class="article__item">
+                <h3 class="content__title title">courses</h3>
+                <div class="content__wrapper">
+                    <div class="content__info">
+                        <a class="place" href="https://www.udemy.com/course/javascript_full/" target="_blank">udemy</a>
+                        <p class="major">JavaScript + React</p>
+                    </div>
+                    <div class="content__desc">
+                        <p>jan 2021-</p>
+                        <p>jun 2021</p>
+                    </div>
+                </div>
+                <div class="content__wrapper">
+                    <div class="content__info">
+                        <a class="place" href="https://rs.school/courses/javascript-ru" target="_blank">The Rolling Scopes</a>
+                        <p class="major">JavaScript/Front-end</p>
+                    </div>
+                    <div class="content__desc">
+                        <p>sep 2021-</p>
+                        <p>jan 2022</p>
+                    </div>
+                </div>
+            </article>
+            <article class="article__item">
+                <h3 class="content__title title">Languages</h3>
+                <div class="content__wrapper">
+                    <p class="">English</p>
+                    <p class="content__desc">entermediate</p>
+                </div>
+                <div class="content__wrapper">
+                    <p class="">Ukranian</p>
+                    <p class="content__desc">fluent</p>
+                </div>
+                <div class="content__wrapper">
+                    <p class="">Russian</p>
+                    <p class="content__desc">native</p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="foorer__item">
+        <a class="footer__link" href="https://rs.school" target="_blank">
+            <img class="footer__img footer__item" src="images/rs_school.svg" alt="rs school link">
+        </a>
+        </div>
+        <div class="foorer__item">
+            <p class="footer__">telegram</p>
+            <a class="footer__link" href="https://t.me/Liesnykh_Dmitriy" target="_blank">t.me/Lies...</a>
+        </div>
+        <div class="foorer__item">
+            <p>github</p>
+            <a class="footer__link" href="https://github.com/Dmitriylies" target="_blank">github.com...</a>
+        </div>
+    </footer>
+</div>
 </body>
 </html>

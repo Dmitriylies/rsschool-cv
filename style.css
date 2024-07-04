@@ -4,16 +4,19 @@
 	margin: 0;
 	border: 0;
 }
-a {
-
+html,
+body {
+  height: 100%;
+}
+a,
+a:visited {
+  text-decoration: none;
+  color: unset;
+}
+a:hover {
+  text-decoration: none;
 }
 nav,footer,header,aside {display: block;}
-
-ul[class],
-ol[class] {
-  padding: 0;
-  list-style: none;
-}
 /* --------------fonts*/
 @font-face {
     font-family: 'Anton';
@@ -31,24 +34,36 @@ ol[class] {
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('/fonts/IBMPlexMono-ExtraLight.woff2') format('woff2'),
+        url('/fonts/IBMPlexMono-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+.title {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
 
 body {
     background-color: #B5B5B5; 
     color: #DDDDDD;
     font-family: 'Blinker SemiLight';
+    text-transform: uppercase;
 }
-.main {
+.wrapper {
     display: block;
     margin: auto;
     max-width: 1024px;
     background-color: #252525;
+    padding: 18px 15px 0 15px;
 }
-
 .header__photo {
     display: flex;
     justify-content: center;
-    padding: 18px 15px 0 15px;
-        margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 .header__img {
     display: flex;
@@ -56,18 +71,18 @@ body {
     height: auto;
 }
 .profession {
-    text-transform: uppercase;
     display: flex;
     justify-content:space-between;
-    padding: 0 50px 0 50px;
+    align-items: center;
+    padding: 5px 35px 5px 35px;
     
 }
 .profession__text {
-
+    font-size: 27px;
 }
 .profession__icon {
-    max-width: 30px;
-    max-height: 30px;
+    max-width: 26px;
+    height: auto;
 }
 .name {
     display: flex;
@@ -75,17 +90,106 @@ body {
     font-family: 'Anton';
     text-transform: uppercase;
     font-size: 80px;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
     letter-spacing: 3px;
-
 }
 .main {
-    
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 15px 0 35px;
 }
-.information {
+.container {
+    width: 45%;
 }
-.information__education {
+.about {
+    margin-bottom: 30px;
 }
-.information__skills {
+.article__item {
+    margin-bottom: 30px;
 }
-.information__experience {
+.content__title {
+}
+.content__list {
+    list-style: none;
+    padding-left: 15px;
+}
+.content__item {
+    margin-bottom: 10px;
+}
+.list-item__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.list-item__name {
+}
+.list-item__indikator {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 130px;
+    height: 20px;
+    padding-right: 80px;
+}
+.indikator__item {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #DDDDDD;
+}
+.full {
+    background-color: #DDDDDD;
+}
+.content__code {
+    text-transform: lowercase;
+    padding-left: 15px;
+    background-color: #292828;
+}
+.code {
+    font-size: 11px;
+}
+.code__color {
+    color: rgb(241, 220, 195);
+}
+.content__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    padding-right: 15px;
+}
+.content__info {
+    width: 50%;
+}
+.content__desc {
+    font-size: 12px;
+}
+.major {
+    color: #B5B5B5;
+    text-transform: lowercase;
+}
+.content__lang {
+    display: flex;
+    justify-content: space-between;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.5px solid;
+    padding: 10px 35px 10px 35px;
+}
+.footer__img {
+    height: 50px;
+    max-width: 100px;
+}
+.foorer__item {
+
+}
+.footer__link {
+    font-family: 'IBM Plex Mono';
+    text-transform: lowercase;
+    font-size: 12px;
 }
