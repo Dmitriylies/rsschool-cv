@@ -175,6 +175,9 @@ body {
     justify-content: space-between;
 }
 .footer {
+
+}
+.footer__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -185,11 +188,23 @@ body {
     height: 50px;
     max-width: 100px;
 }
-.foorer__item {
+.footer__item {
 
 }
 .footer__link {
     font-family: 'IBM Plex Mono';
     text-transform: lowercase;
     font-size: 12px;
+}
+.footer__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-top: 0.5px solid #B5B5B5;;
+    padding: 10px 0;
+}
+.footer__bottom-text {
+    letter-spacing: 7px;
+    color: #B5B5B5;
 }
