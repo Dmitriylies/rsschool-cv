@@ -46,7 +46,6 @@ nav,footer,header,aside {display: block;}
     font-size: 22px;
     margin-bottom: 15px;
 }
-
 body {
     background-color: #B5B5B5; 
     color: #DDDDDD;
@@ -109,8 +108,6 @@ body {
 .article__item {
     margin-bottom: 30px;
 }
-.content__title {
-}
 .content__list {
     list-style: none;
     padding-left: 15px;
@@ -121,8 +118,6 @@ body {
 .list-item__inner {
     display: flex;
     justify-content: space-between;
-}
-.list-item__name {
 }
 .list-item__indikator {
     display: flex;
@@ -174,9 +169,6 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.footer {
-
-}
 .footer__wrapper {
     display: flex;
     justify-content: space-between;
@@ -188,9 +180,6 @@ body {
     height: 50px;
     max-width: 100px;
 }
-.footer__item {
-
-}
 .footer__link {
     font-family: 'IBM Plex Mono';
     text-transform: lowercase;
@@ -200,7 +189,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
     border-top: 0.5px solid #B5B5B5;;
     padding: 10px 0;
 }
